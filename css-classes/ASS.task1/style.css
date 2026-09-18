@@ -1,0 +1,189 @@
+/* Remove default spacing and make sizing easier */
+* {
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 25px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+}
+
+
+/* 
+   Flexbox is used to align all examples
+   in one row.
+*/
+.examples {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    padding: 30px;
+}
+
+
+/* Individual example box */
+.example {
+    width: 240px;
+    min-height: 250px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+/* =========================
+   :hover Example
+   ========================= */
+
+a {
+    display: inline-block;
+
+    padding: 10px;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* 
+   When mouse comes over the link,
+   its background and text color change.
+*/
+a:hover {
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 6px;
+}
+
+
+/* =========================
+   Button Styling
+   ========================= */
+
+button {
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #10b981;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   :focus Example
+   ========================= */
+
+/*
+   When button gets focus,
+   an outline appears.
+*/
+button:focus {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   :active Example
+   ========================= */
+
+/*
+   While button is being clicked,
+   it becomes smaller and changes color.
+*/
+button:active {
+    transform: scale(0.94);
+    background-color: #dc2626;
+}
+
+
+/* =========================
+   :nth-child() Example
+   ========================= */
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+li {
+    padding: 8px;
+    margin: 5px;
+
+    background-color: #e5e7eb;
+
+    border-radius: 5px;
+}
+
+
+/*
+   Selects odd-numbered list items:
+   1st, 3rd, 5th...
+*/
+li:nth-child(odd) {
+    background-color: #bfdbfe;
+}
+
+
+/* Paragraph styling */
+.example p {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+/*
+   Below 700px, examples will
+   appear one below another.
+*/
+@media (max-width: 700px) {
+
+    .examples {
+        flex-direction: column;
+    }
+
+}
