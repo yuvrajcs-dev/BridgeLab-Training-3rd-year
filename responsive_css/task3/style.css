@@ -1,0 +1,51 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    padding: 25px;
+    background: #dbeafe;
+    border-radius: 12px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.card:hover {
+    background: #86efac;
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: auto;
+    }
+}

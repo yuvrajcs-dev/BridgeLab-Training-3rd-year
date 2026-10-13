@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Scope
+        // block - let, const
+        // functional - var
+
+        // let a = "hello";
+
+        // {
+        //     var a = "hello";
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+        // let a = "hello";
+
+        // function fun(){
+        //     let a = "hello";
+        //     console.log(a);
+        // }
+        // fun();
+        // console.log(a);
+
+        // let name = "raj";
+        // let age = 18;
+
+        // let result = `my name is ${name} and my age is ${age}`;
+        // console.log(result);
+        // console.log(typeof result);
+
+
+        // let username = " Laxman Agrawal ";
+        // console.log(username.trim());
+        // console.log(username.toUpperCase());
+        // console.log(username.toLowerCase());
+        // console.log(username.indexOf("L"));
+        // console.log(username.includes("Kumar"));
+        // console.log(username.slice(2,5));
+        // console.log(username.slice(5));
+        // console.log(username.trim().split(" "));
+        // console.log(username.trim().toUpperCase().split(" "));
+        // const password = prompt("what is your Password");
+
+        // function checkPassword(password){
+        //     var  character = 0,number = 0, special = 0;
+
+        //     for (const char of password){
+        //         if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z'))   character++;
+        //         else if (char>='0' && char<='9')   number++;
+        //         else if (char!=' ')  special++;
+        //     }
+
+        //     if (special>=1 && character>=5 && number>=5)  console.log("true");
+        //     console.log("false");
+        // }
+
+        // function generateOtp(){
+
+        // }/
+            let arr=["hello","hi",12,true]
+            for(let x of arr){
+                console.log(x)
+            }
+            let ans="";
+            for(let i=0;i<arr.length;i++){
+                ans+=arr[i]+" ";
+            }
+            console.log(ans)
+            console.log(arr.concat("yuvi","deep"))
+            console.log(arr.copyWithin)
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+.side{
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.img{
+    height: 30px;
+    width: 30px;
+}
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-between;
+    font-size: 40px;
+}
+.sign in{
+    width: 40px;
+}
